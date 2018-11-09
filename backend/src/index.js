@@ -17,6 +17,7 @@ app.use((req, res, next) => {
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     return next();
 })
+
 app.use(express.json());
 app.use(require('./routes'));
 app.use(cors());

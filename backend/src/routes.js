@@ -7,12 +7,8 @@ const LikeController = require('./controllers/LikeController')
 routes.get('/', (req, res) => {
     res.send('Hello');
 });
-//routes.get('/tweets', TweetController.index);
-//routes.post('/tweets', TweetController.store);
-
-routes.get("/tweets", TweetController.index);
-routes.post("/tweets", TweetController.store);
-
+routes.get('/tweets', TweetController.index);
+routes.post('/tweets', TweetController.store);
 routes.post('/likes/:id', LikeController.store);
 
 module.exports = routes;
